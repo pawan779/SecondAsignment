@@ -6,23 +6,21 @@
     tools:context="com.fragment.Automorphic">
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Text"
         android:id="@+id/etAutomorphic"
         android:hint="Enter any number"
         android:inputType="number"
         />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Check"
+        style="@style/Button"
+        android:text="Check Automorphic"
         android:id="@+id/btnAutomorphic"
         />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TextView"
+        android:textAlignment="center"
         android:id="@+id/tvAutomorphic"/>
 
 </LinearLayout>

@@ -6,36 +6,28 @@
     tools:context="com.fragment.SimpleInterest">
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Text"
         android:id="@+id/etPrincipal"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:hint="Enter principal"/>
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Text"
         android:id="@+id/etTime"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:hint="Enter time"/>
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Text"
         android:id="@+id/etRate"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:hint="Enter rate"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Button"
         android:text="Calculate SI"
-        android:textSize="20dp"
         android:id="@+id/btnSI"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:textStyle="bold"
+        style="@style/TextView"
         android:textAlignment="center"
         android:id="@+id/tvSI"/>
 

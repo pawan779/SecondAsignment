@@ -7,23 +7,21 @@
 
     <!-- TODO: Update blank fragment layout -->
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+       style="@style/Text"
         android:id="@+id/etRadius"
         android:inputType="number"
         android:hint="Enter radius"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+     style="@style/Button"
         android:id="@+id/btnArea"
         android:text="Calculate Area of Circle"
-        android:textSize="20dp"/>
+        />
 
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TextView"
+        android:textAlignment="center"
         android:id="@+id/tvArea"/>
 
 </LinearLayout>

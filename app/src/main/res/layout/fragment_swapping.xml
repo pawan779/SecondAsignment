@@ -6,8 +6,7 @@
     tools:context="com.fragment.Swapping">
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Text"
         android:id="@+id/etFirst"
         android:hint="Enter first number"
         android:inputType="number"
@@ -15,22 +14,20 @@
 
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Text"
         android:id="@+id/etSecond"
         android:hint="Enter second number"
         android:inputType="number"
         />
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Button"
         android:text="Swap"
         android:id="@+id/btnSwapping"
         />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TextView"
+        android:textAlignment="center"
         android:id="@+id/tvSwapping"
         />
 

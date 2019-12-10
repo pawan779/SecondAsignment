@@ -6,23 +6,21 @@
     tools:context="com.fragment.Palindrome">
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Text"
         android:id="@+id/etPalindrome"
         android:hint="Enter any number"
         android:inputType="number"
         />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Check"
+        style="@style/Button"
+        android:text="Check palindrome"
         android:id="@+id/btnPalindrome"
         />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TextView"
+        android:textAlignment="center"
         android:id="@+id/tvPalindrome"/>
 
 
