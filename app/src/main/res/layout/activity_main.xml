@@ -53,10 +53,8 @@ android:text="Automorphic"
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="400dp"
         android:orientation="vertical"
-        android:layout_height="wrap_content">
-
-
-    </LinearLayout>
+        android:id="@+id/fragmentContainer"/>
 
 </LinearLayout>
