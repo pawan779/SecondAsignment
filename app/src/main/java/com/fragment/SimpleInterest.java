@@ -47,7 +47,7 @@ private TextView tvSI;
         t=Float.parseFloat(etTime.getText().toString());
         r=Float.parseFloat(etRate.getText().toString());
 
-        si=(p*t*r)/1000;
+        si=(p*t*r)/100;
 
         tvSI.setText("Simple Interest is "+si);
 
