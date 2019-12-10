@@ -13,10 +13,11 @@ import com.fragment.Armstrong;
 import com.fragment.Automorphic;
 import com.fragment.Palindrome;
 import com.fragment.SimpleInterest;
+import com.fragment.Swapping;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-private Button btnArea,btnPalindrome, btnSI, btnArmstrong, btnAuto;
+private Button btnArea,btnPalindrome, btnSI, btnArmstrong, btnAuto,btnSwapping;
 
 
     @Override
@@ -28,6 +29,7 @@ private Button btnArea,btnPalindrome, btnSI, btnArmstrong, btnAuto;
         btnSI=findViewById(R.id.btnSI);
         btnArmstrong=findViewById(R.id.btnArmstrong);
         btnAuto=findViewById(R.id.btnAutomorphic);
+btnSwapping=findViewById(R.id.btnSwapping);
 
 
         btnArea.setOnClickListener(this);
@@ -35,6 +37,8 @@ private Button btnArea,btnPalindrome, btnSI, btnArmstrong, btnAuto;
         btnSI.setOnClickListener(this);
         btnArmstrong.setOnClickListener(this);
         btnAuto.setOnClickListener(this);
+        btnSwapping.setOnClickListener(this);
+
 
     }
 
@@ -71,6 +75,11 @@ private Button btnArea,btnPalindrome, btnSI, btnArmstrong, btnAuto;
                 fragmentTransaction.commit();
                 break;
 
+            case R.id.btnSwapping:
+                Swapping swapping=new Swapping();
+                fragmentTransaction.replace(R.id.fragmentContainer,swapping);
+                fragmentTransaction.commit();
+                break;
         }
 
     }
