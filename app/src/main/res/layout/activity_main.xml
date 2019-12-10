@@ -1,60 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="#00bcd4"
+
     android:layout_gravity="center_horizontal">
 
-  <GridLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:columnCount="3"
-      android:rowCount="2"
-      >
 
-      <Button
-         style="@style/button"
-          android:id="@+id/btnArea"
-          android:text="Area of circle"
-          />
+    <Button
+        android:id="@+id/btnArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Area of circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-      <Button
-          android:id="@+id/btnPalindrome"
-          style="@style/button"
-          android:text="Palindrome"/>
-      <Button
-android:id="@+id/btnSI"
-          style="@style/button"
-          android:text="Simple Interest"/>
+    <Button
+        android:id="@+id/btnPalindrome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Palindrome"
+        app:layout_constraintStart_toEndOf="@+id/btnArea"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnSI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Simple Interest"
+        app:layout_constraintStart_toEndOf="@+id/btnPalindrome"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnArmstrong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Armstrong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnArea" />
 
-      <Button
-          android:id="@+id/btnArmstrong"
-          android:text="Armstrong"
-          style="@style/button"/>
+    <Button
+        android:id="@+id/btnAutomorphic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Automorphic"
+        app:layout_constraintStart_toEndOf="@+id/btnArmstrong"
+        app:layout_constraintTop_toBottomOf="@+id/btnPalindrome"
+        app:layout_constraintWidth_percent="33.33"/>
 
-      <Button
-          android:id="@+id/btnAutomorphic"
-android:text="Automorphic"
-          style="@style/button"/>
+    <Button
+        android:id="@+id/btnSwapping"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Swapping"
+        app:layout_constraintStart_toEndOf="@+id/btnAutomorphic"
+        app:layout_constraintTop_toBottomOf="@+id/btnSI" />
 
-
-      <Button
-          android:id="@+id/btnSwapping"
-          android:text="Swapping"
-          style="@style/button"/>
-
-
-  </GridLayout>
 
     <LinearLayout
+        android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
+        android:background="#D6C1C1"
         android:orientation="vertical"
-        android:id="@+id/fragmentContainer"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAutomorphic"
+        app:layout_constraintVertical_bias="0.148">
 
-</LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

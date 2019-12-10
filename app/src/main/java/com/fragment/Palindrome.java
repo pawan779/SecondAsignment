@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +40,12 @@ private TextView tvPalindrome;
 
     @Override
     public void onClick(View v) {
+
+        if(TextUtils.isEmpty(etPalindrome.getText()))
+        {
+            etPalindrome.setError("Enter any number");
+            return;
+        }
         int reversedInteger = 0, remainder, originalInteger;
 
         int num=Integer.parseInt(etPalindrome.getText().toString());

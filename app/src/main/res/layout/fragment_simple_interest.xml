@@ -9,30 +9,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etPrincipal"
+        android:inputType="number"
         android:hint="Enter principal"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etTime"
+        android:inputType="number"
         android:hint="Enter time"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etRate"
+        android:inputType="number"
         android:hint="Enter rate"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calculate SI"
+        android:textSize="20dp"
         android:id="@+id/btnSI"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
         android:id="@+id/tvSI"/>
-
-
 
 
 </LinearLayout>

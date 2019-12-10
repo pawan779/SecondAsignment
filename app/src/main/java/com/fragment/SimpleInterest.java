@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,6 +42,23 @@ private TextView tvSI;
 
     @Override
     public void onClick(View v) {
+
+        if(TextUtils.isEmpty(etPrincipal.getText()))
+        {
+            etPrincipal.setError("Enter principal");
+            return;
+        }
+        if(TextUtils.isEmpty(etTime.getText()))
+        {
+            etTime.setError("Enter time");
+            return;
+        }
+        if(TextUtils.isEmpty(etRate.getText()))
+        {
+            etRate.setError("Enter rate");
+            return;
+        }
+
 
         float p,t,r, si;
         p=Float.parseFloat(etPrincipal.getText().toString());

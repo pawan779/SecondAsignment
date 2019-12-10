@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,6 +43,12 @@ private TextView tvAuto;
 
     @Override
     public void onClick(View v) {
+
+        if(TextUtils.isEmpty(etAuto.getText()))
+        {
+            etAuto.setError("Enter any number");
+            return;
+        }
         int num=Integer.parseInt(etAuto.getText().toString());
 
 

@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +40,12 @@ private TextView tvArmstrong;
 
     @Override
     public void onClick(View v) {
+
+        if (TextUtils.isEmpty(etArmstrong.getText()))
+        {
+            etArmstrong.setError("Enter armstrong number");
+            return;
+        }
 
         int num = Integer.parseInt(etArmstrong.getText().toString());
 

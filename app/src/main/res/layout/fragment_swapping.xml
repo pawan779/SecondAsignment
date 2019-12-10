@@ -24,14 +24,15 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Check"
+        android:text="Swap"
         android:id="@+id/btnSwapping"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvSwapping"/>
+        android:id="@+id/tvSwapping"
+        />
 
 
 
