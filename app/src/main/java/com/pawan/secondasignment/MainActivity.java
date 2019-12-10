@@ -10,10 +10,11 @@ import android.widget.Button;
 
 import com.fragment.Area;
 import com.fragment.Palindrome;
+import com.fragment.SimpleInterest;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-private Button btnArea,btnPalindrome;
+private Button btnArea,btnPalindrome, btnSI;
 
 
     @Override
@@ -22,10 +23,13 @@ private Button btnArea,btnPalindrome;
         setContentView(R.layout.activity_main);
         btnArea=findViewById(R.id.btnArea);
         btnPalindrome=findViewById(R.id.btnPalindrome);
+        btnSI=findViewById(R.id.btnSI);
 
 
         btnArea.setOnClickListener(this);
         btnPalindrome.setOnClickListener(this);
+        btnSI.setOnClickListener(this);
+
     }
 
     @Override
@@ -42,6 +46,12 @@ private Button btnArea,btnPalindrome;
             case R.id.btnPalindrome:
                 Palindrome palindrome=new Palindrome();
                 fragmentTransaction.replace(R.id.fragmentContainer,palindrome);
+                fragmentTransaction.commit();
+                break;
+
+            case R.id.btnSI:
+                SimpleInterest simpleInterest=new SimpleInterest();
+                fragmentTransaction.replace(R.id.fragmentContainer,simpleInterest);
                 fragmentTransaction.commit();
                 break;
 
