@@ -9,7 +9,7 @@
         style="@style/Text"
         android:id="@+id/etPrincipal"
         android:inputType="numberDecimal"
-        android:hint="Enter principal"/>
+        android:hint="Enter principal in Rs"/>
     <EditText
         style="@style/Text"
         android:id="@+id/etTime"

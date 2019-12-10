@@ -67,7 +67,7 @@ private TextView tvSI;
 
         si=(p*t*r)/100;
 
-        tvSI.setText("Simple Interest is "+si);
+        tvSI.setText("Simple Interest is Rs"+si);
 
     }
 }
